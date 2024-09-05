@@ -1,3 +1,3 @@
-document.getElementById("botao").onclick = function(){
-    console.log("A tecla foi pressionada pelo usuario")
-};
+document.addEventListener('keydown', function(event){
+    console.log(event.key)
+})

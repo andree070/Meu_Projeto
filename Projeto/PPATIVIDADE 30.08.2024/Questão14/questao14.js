@@ -1,6 +1,7 @@
-document.addEventListener('keydown', function(event) {
+let paragrafo = document.getElementById('tecla')
+
+document.addEventListener('keypress', function(event){
     let tecla = event.key
-    if(tecla === 'Escape'){
-        alert('Tecla Esc foi Pressionada')
-    }
-});
+    let conteudoParagrafo = paragrafo.textContent
+    paragrafo.textContent = conteudoParagrafo + tecla
+})
