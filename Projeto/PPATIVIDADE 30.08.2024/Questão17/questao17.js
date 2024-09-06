@@ -1,17 +1,11 @@
-let valor = document.getElementById('valor');
-let count = 0;
+var contagem = document.getElementById('contador')
+var btn = document.getElementById('incrementar')
 
-document.getElementById('btnIncrementar').addEventListener('click', () => {
-    count++;
-    valor.textContent = count;
-});
+var contador = 0 
 
-document.getElementById('btnDecrementar').addEventListener('click', () => {
-    count--;
-    valor.textContent = count;
-});
+function atualizarContagem(){
+    contador ++
+    contagem.textContent = contador
+}
 
-document.getElementById('btnResetar').addEventListener('click', () => {
-    count = 0;
-    valor.textContent = count;
-});
+setInterval(atualizarContagem,3000)
